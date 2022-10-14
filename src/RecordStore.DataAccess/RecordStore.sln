@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1E8D6BD1-7DE8-48BE-BA99-5BD0B809A5DF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{980C932F-73AF-4306-BF1E-63890AAAE22B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStore.DataAccess", "RecordStore.DataAccess.csproj", "{3F07EC6B-7498-48A5-AD78-9E54299815B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F07EC6B-7498-48A5-AD78-9E54299815B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F07EC6B-7498-48A5-AD78-9E54299815B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F07EC6B-7498-48A5-AD78-9E54299815B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F07EC6B-7498-48A5-AD78-9E54299815B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3F07EC6B-7498-48A5-AD78-9E54299815B1} = {1E8D6BD1-7DE8-48BE-BA99-5BD0B809A5DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B830677-EBE2-4F07-B03C-EEB024DD2B6D}
+	EndGlobalSection
+EndGlobal
