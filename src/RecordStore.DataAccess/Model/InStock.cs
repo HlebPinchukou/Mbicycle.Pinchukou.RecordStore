@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RecordStore.DataAccess.Model
+﻿namespace RecordStore.DataAccess.Model
 {
     public class InStock: Base.Model
     {

@@ -1,10 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using RecordStore.DataAccess.Model;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RecordStore.DataAccess.Context
 {
@@ -14,7 +9,10 @@ namespace RecordStore.DataAccess.Context
      public DbSet<Album> Albums { get; set; }
      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
      {
-      optionsBuilder.UseSqlServer(@"Server=PC\DESKTOP-FB3C9TG;Database=GamesLib;Trusted_Connection=True");
+      optionsBuilder.UseSqlServer(@"Server=DESKTOP-13E7H8C;Database=RecordStore;Trusted_Connection=True");
      }
     }
 }
+
+//DESKTOP-13E7H8C - р
+//DESKTOP-FB3C9TG - д
