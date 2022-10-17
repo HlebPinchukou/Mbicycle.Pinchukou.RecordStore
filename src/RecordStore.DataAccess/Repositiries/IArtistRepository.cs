@@ -28,7 +28,7 @@ namespace RecordStore.DataAccess.Repositories
         public void Delete(int id)
         {
             var item = new Artist { Id = id };
-            _context.Artist.Attach(item);
+            _context.Artists.Attach(item);
             Delete(item);
         }
 
