@@ -9,7 +9,7 @@ namespace RecordStore.DataAccess.Context
      public DbSet<Album> Albums { get; set; }
      protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
      {
-      optionsBuilder.UseSqlServer(@"Server=DESKTOP-13E7H8C;Database=RecordStore;Trusted_Connection=True");
+      optionsBuilder.UseSqlServer(@"Server=DESKTOP-FB3C9TG;Database=RecordStore;Trusted_Connection=True");
      }
     }
 }
