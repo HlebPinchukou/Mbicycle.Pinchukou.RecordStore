@@ -14,7 +14,7 @@ namespace RecordStore.DataAccess.Repositories
         public Artist Add(Artist item)
         {
             var result = _context.Artist.Add(item);
-            _context.Savechanges();
+            _context.SaveChanges();
 
             return result.Entity;
         }
@@ -32,7 +32,7 @@ namespace RecordStore.DataAccess.Repositories
             Delete(item);
         }
 
-        public ICollectian<Artist> Get()
+        public ICollection<Artist> Get()
         {
             return _context.Products.ToList();
         }
@@ -51,8 +51,8 @@ namespace RecordStore.DataAccess.Repositories
         {
             _context.Update(item);
             _context.SaveChanges();
-           
+
         }
     }
-      
+
 }
