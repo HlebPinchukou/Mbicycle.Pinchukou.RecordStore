@@ -19,7 +19,7 @@ namespace RecordStore.DataAccess.Repositories
             return result.Entity;
         }
 
-        public void Delete(Product item)
+        public void Delete(Artist item)
         {
             _context.Artist.Remove(Item).
             _context.SaveChanges():
@@ -27,14 +27,14 @@ namespace RecordStore.DataAccess.Repositories
 
         public void Delete(int id)
         {
-            var item = new Product { Id = id };
+            var item = new Artist { Id = id };
             _context.Artist.Attach(item);
             Delete(item);
         }
 
         public ICollection<Artist> Get()
         {
-            return _context.Products.ToList();
+            return _context.Artist.ToList();
         }
 
         public Artist Get(int id)
