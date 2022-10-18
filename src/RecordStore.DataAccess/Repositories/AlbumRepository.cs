@@ -22,14 +22,14 @@ namespace RecordStore.DataAccess.Repositories
 
         public void Delete(Album item)
         {
-            _context.Artists.Remove(item);
+            _context.Albums.Remove(item);
             _context.SaveChanges();
         }
 
         public void Delete(int id)
         {
             var item = new Album { Id = id };
-            _context.Artists.Attach(item);
+            _context.Albums.Attach(item);
             Delete(item);
         }
 
@@ -40,7 +40,7 @@ namespace RecordStore.DataAccess.Repositories
 
         public Album Get(int id)
         {
-            var result = _context.Artists
+            var result = _context.Albums
                 .Where(x => x.Id == id)
                 .FirstOrDefault();
 
