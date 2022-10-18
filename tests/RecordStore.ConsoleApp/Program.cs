@@ -4,15 +4,15 @@ using RecordStore.DataAccess.Repositories;
 
 using (var context = new RecordStoreContext())
 {
-    var drake = new Artist { Name = "Drake" };
-    var cudi = new Artist { Name = "Kid Cudi" };
+    var drake = new Album { Name = "Certified Lover Boy" };
+    var cudi = new Album { Name = "Man on the Moon" };
 
-    var artistRepository = new ArtistRepository(context);
+    var albumRepository = new AlbumRepository(context);
 
-    artistRepository.Add(cudi);
-    artistRepository.Add(drake);
+    albumRepository.Add(cudi);
+    albumRepository.Add(drake);
 
-    foreach (var item in artistRepository.Get())
+    foreach (var item in albumRepository.Get())
     {
         Console.WriteLine($"{item.Id} - {item.Name} ");
     }

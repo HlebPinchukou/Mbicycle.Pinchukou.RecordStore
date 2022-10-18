@@ -3,24 +3,24 @@ using RecordStore.DataAccess.Model;
 
 namespace RecordStore.DataAccess.Repositories
 {
-    public class ArtistRepository : IArtistRepository
+    public class AlbumRepository : IAlbumRepository
     {
         private readonly RecordStoreContext _context;
 
-        public ArtistRepository(RecordStoreContext context)
+        public AlbumRepository(RecordStoreContext context)
         {
             _context = context;
         }
 
-        public Artist Add(Artist item)
+        public Album Add(Album item)
         {
-            var result = _context.Artists.Add(item);
+            var result = _context.Albums.Add(item);
             _context.SaveChanges();
 
             return result.Entity;
         }
 
-        public void Delete(Artist item)
+        public void Delete(Album item)
         {
             _context.Artists.Remove(item);
             _context.SaveChanges();
@@ -28,27 +28,27 @@ namespace RecordStore.DataAccess.Repositories
 
         public void Delete(int id)
         {
-            var item = new Artist { Id = id };
+            var item = new Album { Id = id };
             _context.Artists.Attach(item);
             Delete(item);
         }
 
-        public ICollection<Artist> Get()
+        public ICollection<Album> Get()
         {
-            return _context.Artists.ToList();
+            return _context.Albums.ToList();
         }
 
-        public Artist Get(int id)
+        public Album Get(int id)
         {
             var result = _context.Artists
                 .Where(x => x.Id == id)
                 .FirstOrDefault();
 
-            result ??= new Artist();
+            result ??= new Album();
 
             return result;
         }
-        public void Update(Artist item)
+        public void Update(Album item)
         {
             _context.Update(item);
             _context.SaveChanges();
