@@ -1,5 +1,4 @@
-﻿using RecordStore.DataAccess.Context;
-using RecordStore.DataAccess.Model;
+﻿using RecordStore.DataAccess.Model;
 
 namespace RecordStore.DataAccess.Repositories
 {

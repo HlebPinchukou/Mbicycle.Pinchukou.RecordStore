@@ -1,4 +1,5 @@
-﻿using RecordStore.DataAccess.Model;
+﻿using RecordStore.DataAccess.Context;
+using RecordStore.DataAccess.Model;
 
 namespace RecordStore.DataAccess.Repositories
 {
@@ -21,8 +22,8 @@ namespace RecordStore.DataAccess.Repositories
 
         public void Delete(Artist item)
         {
-            _context.Artists.Remove(Item).
-            _context.SaveChanges():
+            _context.Artists.Remove(item);
+            _context.SaveChanges();
         }
 
         public void Delete(int id)

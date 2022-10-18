@@ -14,6 +14,6 @@ using (var context = new RecordStoreContext())
 
     foreach (var item in artistRepository.Get())
     {
-        Console.WriteLine($"{item.Id} - {item.Name} ")
+        Console.WriteLine($"{item.Id} - {item.Name} ");
     }
 }
