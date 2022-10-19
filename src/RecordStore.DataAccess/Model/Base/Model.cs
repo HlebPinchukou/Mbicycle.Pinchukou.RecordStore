@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RecordStore.DataAccess.Model.Base
 {
-    public abstract class Model
+    public abstract class Entity
     {
         public int Id { get; set; }
     }

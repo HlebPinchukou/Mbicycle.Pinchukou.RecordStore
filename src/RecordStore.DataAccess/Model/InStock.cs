@@ -1,6 +1,9 @@
-﻿namespace RecordStore.DataAccess.Model
+﻿using RecordStore.DataAccess.Model.Base;
+
+namespace RecordStore.DataAccess.Model
 {
-    public class InStock: Base.Model
+    
+    public class InStock: Entity
     {
         
         public string TypeOfRecord { get; set; }

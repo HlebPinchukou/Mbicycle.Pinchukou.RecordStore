@@ -2,7 +2,7 @@
 
 namespace RecordStore.DataAccess.Repositories
 {
-    public interface IAlbumRepository : IRepository<Album>
+    public interface IArtistRepository : IRepository<Artist>
     {
 
     }

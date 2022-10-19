@@ -8,7 +8,7 @@ namespace RecordStore.DataAccess.Context
         
      public DbSet<InStock> InStocks { get; set; }
      
-     public DbSet<Album> Artists { get; set; }
+     public DbSet<Artist> Artists { get; set; }
      
      public DbSet<Album> Albums { get; set; }
      

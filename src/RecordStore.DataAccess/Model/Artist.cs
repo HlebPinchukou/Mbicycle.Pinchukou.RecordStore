@@ -1,6 +1,8 @@
-﻿namespace RecordStore.DataAccess.Model
+﻿using RecordStore.DataAccess.Model.Base;
+
+namespace RecordStore.DataAccess.Model
 {
-    public class Artist: Base.Model
+    public class Artist: Entity
     {
         
         public string Name { get; set; }
