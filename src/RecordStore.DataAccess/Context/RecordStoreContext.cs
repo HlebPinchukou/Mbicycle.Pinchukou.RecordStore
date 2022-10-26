@@ -4,9 +4,8 @@ using RecordStore.DataAccess.Model;
 namespace RecordStore.DataAccess.Context
 {
     public sealed class RecordStoreContext: DbContext
-    {
-        
-     public DbSet<InStock> InStocks { get; set; }
+    { 
+        public DbSet<InStock> InStocks { get; set; }
      
      public DbSet<Artist> Artists { get; set; }
      
@@ -16,7 +15,6 @@ namespace RecordStore.DataAccess.Context
      {
       optionsBuilder.UseSqlServer(@"Server=DESKTOP-FB3C9TG;Database=RecordStore;Trusted_Connection=True");
      }
-     
     }
 }
 

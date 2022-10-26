@@ -1,35 +1,35 @@
-﻿using Microsoft.EntityFrameworkCore;
-using RecordStore.DataAccess.Context;
+﻿using RecordStore.DataAccess.Context;
 using RecordStore.DataAccess.Model;
 using RecordStore.DataAccess.Repositories;
+using RecordStore.DataAccess.UnitOfWork;
 
-using (var context = new RecordStoreContext())
+using var context = new RecordStoreContext();
+
+var unitOfWork = new UnitOfWork(context);
+var albumRepo = new AlbumRepository(context);
+var artistRepo = new ArtistRepository(context);
+var stockRepo = new InStockRepository(context);
+
+try
 {
-    var list = context.InStocks.Include(x => x.Album).ToList();
+    unitOfWork.BeginTransaction();
+    
+    var moon = new Album { Name = "Man on the Moon" };
+    var cudi = new Artist { Name = "Kid Cudi", Bio = "Some bio", Photo = "link to photo"};
+    
+    albumRepo.Add(moon);
+    artistRepo.Add(cudi);
 
-    var drake = new Album { Name = "Certified Lover Boy" };
-    var cudi = new Album { Name = "Man on the Moon" };
+    //cudi = null;
 
-    var albumRepository = new AlbumRepository(context);
+    Console.WriteLine(cudi.Id);
 
-    drake = albumRepository.Get(5);
+    albumRepo.Add(new Album { Artist = cudi, Cover = "link_to_cover", YearOfRelease = DateTime.Now, Genre = "Rap" });
+    stockRepo.Add(new InStock { TypeOfRecord = "vinyl", Price = 10, Album = moon });
 
-    context.InStocks.Add(new InStock { TypeOfRecord = "Vinyl", Price = 5, Album = drake });
-
-    context.SaveChanges();
-
-    albumRepository.Delete(3);
-
-    albumRepository.Add(drake);
-    albumRepository.Add(cudi);
-
-
-    foreach (var item in albumRepository.Get())
-    {
-        Console.WriteLine($"{item.Id} - {item.Name}");
-    }
-
-    var album = albumRepository.Get(1);
-    Console.WriteLine($"{album.Id} - {album.Name}");
-
+    unitOfWork.CommitTransaction();
+}
+catch
+{
+    unitOfWork.RollbackTransaction();
 }
