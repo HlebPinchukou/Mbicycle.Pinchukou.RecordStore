@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStore.DataAccess", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStore.ConsoleApp", "tests\RecordStore.ConsoleApp\RecordStore.ConsoleApp.csproj", "{D426FEDB-1812-45CF-928F-3EB4DA321560}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStore.BusinessLogic", "src\RecordStore.BusinessLogic\RecordStore.BusinessLogic.csproj", "{3EA04EF9-B94F-4DCE-B567-200291246B26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{D426FEDB-1812-45CF-928F-3EB4DA321560}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D426FEDB-1812-45CF-928F-3EB4DA321560}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D426FEDB-1812-45CF-928F-3EB4DA321560}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3EA04EF9-B94F-4DCE-B567-200291246B26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3EA04EF9-B94F-4DCE-B567-200291246B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3EA04EF9-B94F-4DCE-B567-200291246B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3EA04EF9-B94F-4DCE-B567-200291246B26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
