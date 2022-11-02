@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32210.238
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStore.DataAccess", "src\RecordStore.DataAccess\RecordStore.DataAccess.csproj", "{21F1DE00-2B58-4E19-9774-117F56A1FBDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordStore.DataAccess", "src\RecordStore.DataAccess\RecordStore.DataAccess.csproj", "{21F1DE00-2B58-4E19-9774-117F56A1FBDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStore.ConsoleApp", "tests\RecordStore.ConsoleApp\RecordStore.ConsoleApp.csproj", "{D426FEDB-1812-45CF-928F-3EB4DA321560}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordStore.ConsoleApp", "tests\RecordStore.ConsoleApp\RecordStore.ConsoleApp.csproj", "{D426FEDB-1812-45CF-928F-3EB4DA321560}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStore.BusinessLogic", "src\RecordStore.BusinessLogic\RecordStore.BusinessLogic.csproj", "{3EA04EF9-B94F-4DCE-B567-200291246B26}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RecordStore.BusinessLogic", "src\RecordStore.BusinessLogic\RecordStore.BusinessLogic.csproj", "{3EA04EF9-B94F-4DCE-B567-200291246B26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RecordStore.WebApi", "src\RecordStore.WebApi\RecordStore.WebApi.csproj", "{11CBF309-B8A3-4462-A482-DAA0E0214588}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{3EA04EF9-B94F-4DCE-B567-200291246B26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3EA04EF9-B94F-4DCE-B567-200291246B26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3EA04EF9-B94F-4DCE-B567-200291246B26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11CBF309-B8A3-4462-A482-DAA0E0214588}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11CBF309-B8A3-4462-A482-DAA0E0214588}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11CBF309-B8A3-4462-A482-DAA0E0214588}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11CBF309-B8A3-4462-A482-DAA0E0214588}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
