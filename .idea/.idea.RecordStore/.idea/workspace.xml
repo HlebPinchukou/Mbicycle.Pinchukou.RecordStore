@@ -8,32 +8,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53bfc9ed-281e-4b50-b8a2-822a3af9fa3d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/AllAlbumsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/AllArtistsService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/AllInStocksService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Dto/AlbumDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Dto/ArtistDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Dto/InStockDto.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/IAllInStocksService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/git_toolbox_prj.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.folder.dir/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.folder.dir/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.folder.dir/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.folder.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.folder.dir/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/database-training.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RecordStore.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RecordStore.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/business-logic" />
+      </map>
+    </option>
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/web-api" />
+                    <option name="lastUsedInstant" value="1667381794" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="feature/business-logic" />
+                    <option name="lastUsedInstant" value="1667381793" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$" />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -51,6 +63,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager">
@@ -82,8 +95,16 @@
       <option name="presentableId" value="Default" />
       <updated>1667375162069</updated>
       <workItem from="1667375171782" duration="2928000" />
-      <workItem from="1667379021510" duration="2018000" />
+      <workItem from="1667379021510" duration="3376000" />
     </task>
+    <task id="LOCAL-00001" summary="start business-logic">
+      <created>1667381370828</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1667381370828</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,5 +126,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="start business-logic" />
+    <option name="LAST_COMMIT_MESSAGE" value="start business-logic" />
   </component>
 </project>
