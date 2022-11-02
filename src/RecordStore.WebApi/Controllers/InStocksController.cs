@@ -1,24 +1,40 @@
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
-using RecordStore.BusinessLogic;
-using RecordStore.BusinessLogic.Dto;
+using RecordStore.BusinessLogic.Commands;
+using RecordStore.BusinessLogic.Oueries;
 
-namespace RecordStore.WebApi.Controllers
+namespace Stall.WebApi.Controllers
 {
     [ApiController]
     [Route("api/instock")]
-    public class InStocksController : ControllerBase
+    public class SalesController : ControllerBase
     {
-        private readonly IInStocksService _inStocksService;
+        private readonly IMediator _mediator;
 
-        public InStocksController(IInStocksService inStocksService)
+        public SalesController(IMediator mediator)
         {
-            _inStocksService = inStocksService ?? throw new ArgumentNullException(nameof(inStocksService));
+            _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
         }
 
         [HttpGet("all")]
-        public IEnumerable<InStockDto> Get()
+        public async Task<IActionResult> Get()
         {
-            return _inStocksService.GetAllInStocks();
+            var query = new GetAllInStocksQuery();
+            var result = await _mediator.Send(query);
+            return Ok(result);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Post([FromBody] AddInStockCommand command)
+        {
+            var result = await _mediator.Send(command);
+
+            if (result.Error)
+            {
+                return BadRequest(result);
+            }
+
+            return Ok(result);
         }
     }
 }
