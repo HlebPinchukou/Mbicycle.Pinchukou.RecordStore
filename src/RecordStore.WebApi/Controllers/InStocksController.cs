@@ -1,40 +1,75 @@
 using MediatR;
+using Microsoft.AspNetCore.Http.Extensions;
 using Microsoft.AspNetCore.Mvc;
-using RecordStore.BusinessLogic.Commands;
-using RecordStore.BusinessLogic.Oueries;
+using RecordStore.BusinessLogic.Handlers.Commands.InStock;
+using RecordStore.BusinessLogic.Handlers.Queries;
+using RecordStore.BusinessLogic.Handlers.Queries.InStock;
+using RecordStore.BusinessLogic.Handlers.Commands.InStock;
 
-namespace Stall.WebApi.Controllers
+namespace RecordStore.WebApi.Controllers;
+
+[ApiController]
+[Route("api/sale")]
+public class InStocksController : ControllerBase
 {
-    [ApiController]
-    [Route("api/instock")]
-    public class SalesController : ControllerBase
+    private readonly IMediator _mediator;
+
+    public InStocksController(IMediator mediator)
     {
-        private readonly IMediator _mediator;
+        _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
+    }
 
-        public SalesController(IMediator mediator)
+    [HttpGet("all")]
+    public async Task<IActionResult> Get()
+    {
+        var query = new GetAllInStocksQuery();
+        var result = await _mediator.Send(query);
+        return Ok(result);
+    }
+
+    [HttpGet("dashboard/all")]
+    public async Task<IActionResult> GetForDashboard()
+    {
+        var query = new GetAllInStocksDashboardQuery();
+        var result = await _mediator.Send(query);
+        return Ok(result);
+    }
+        
+    [HttpPost]
+    public async Task<IActionResult> Post([FromBody] AddInStockCommand command)
+    {
+        var result = await _mediator.Send(command);
+            
+        if (!result.Success)
         {
-            _mediator = mediator ?? throw new ArgumentNullException(nameof(mediator));
+            return BadRequest(result);
         }
 
-        [HttpGet("all")]
-        public async Task<IActionResult> Get()
+        return Created(HttpContext.Request.GetDisplayUrl(), result);
+    }
+        
+    [HttpPut]
+    public async Task<IActionResult> Put([FromBody] UpdateInStockCommand command)
+    {
+        var result = await _mediator.Send(command);
+        if (!result.Success)
         {
-            var query = new GetAllInStocksQuery();
-            var result = await _mediator.Send(query);
-            return Ok(result);
+            return BadRequest(result);
+        }
+            
+        return Ok(result);
+    }
+
+    [HttpDelete("{id:int}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        var command = new DeleteInStockCommand {InStockId = id};
+        var result = await _mediator.Send(command);
+        if (!result.Success)
+        {
+            return BadRequest(result);
         }
 
-        [HttpPost]
-        public async Task<IActionResult> Post([FromBody] AddInStockCommand command)
-        {
-            var result = await _mediator.Send(command);
-
-            if (result.Error)
-            {
-                return BadRequest(result);
-            }
-
-            return Ok(result);
-        }
+        return Ok(result);
     }
 }

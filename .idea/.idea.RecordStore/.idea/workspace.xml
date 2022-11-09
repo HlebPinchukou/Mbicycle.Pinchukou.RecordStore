@@ -9,7 +9,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="53bfc9ed-281e-4b50-b8a2-822a3af9fa3d" name="Changes" comment="" />
+    <list default="true" id="53bfc9ed-281e-4b50-b8a2-822a3af9fa3d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Extensions/ValidationResultExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Commands/InStock/DeleteInStockCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Commands/InStock/UpdateInStockCommand.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Queries/Album/GetAllAlbumsQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Queries/Dto/InStocksDashboardDto.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Queries/InStock/GetAllInStockDashboardQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Queries/InStock/GetAllInStocksQuery.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Wrappers/Result/IRequestHandlerResult.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Wrappers/Result/IRequestResult.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RecordStore/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/AllAlbumsService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/AllArtistsService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/AllInStocksService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Commands/AddInStockCommand.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Commands/InStock/AddInStockCommand.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Dto/AlbumDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Queries/Dto/AlbumDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Dto/ArtistDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Queries/Dto/ArtistDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Dto/InStockDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Handlers/Queries/Dto/InStockDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Extensions/ServiceCollectionExtension.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Extensions/ServiceCollectionExtension.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/IAllAlbumsService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/IAllArtistsService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/IAllInStocksService.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Oueries/GetAllInStocksQuery.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/RecordStore.BusinessLogic.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/RecordStore.BusinessLogic.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Wrappers/Result.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.BusinessLogic/Wrappers/Result/Result.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/AlbumRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/AlbumRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/ArtistRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/ArtistRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/IAlbumRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/IAlbumRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/IArtistRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/IArtistRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/IInStockRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/IInStockRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/IRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/IRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/InStockRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/InStockRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/Repository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.DataAccess/Repositories/Repository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.WebApi/Controllers/InStocksController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.WebApi/Controllers/InStocksController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RecordStore.WebApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/src/RecordStore.WebApi/Program.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,7 +57,16 @@
       </map>
     </option>
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
     <option name="recentBranches">
       <RecentBranches>
         <option name="branchesForRepo">
@@ -51,6 +95,9 @@
       </RecentBranches>
     </option>
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://D:/Mbicycle.Pinchukou.RecordStore/src/RecordStore.DataAccess/Repositories/IInStockRepository.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -62,12 +109,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TODO_SCOPE" value="All Places" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected=".NET Project.RecordStore.ConsoleApp">
@@ -130,6 +178,8 @@
       <updated>1667375162069</updated>
       <workItem from="1667375171782" duration="2928000" />
       <workItem from="1667379021510" duration="3376000" />
+      <workItem from="1667392592629" duration="409000" />
+      <workItem from="1667980028168" duration="12467000" />
     </task>
     <task id="LOCAL-00001" summary="start business-logic">
       <created>1667381370828</created>
@@ -138,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1667381370828</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Add mediator">
+      <created>1667392713747</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1667392713747</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +218,7 @@
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="start business-logic" />
-    <option name="LAST_COMMIT_MESSAGE" value="start business-logic" />
+    <MESSAGE value="Add mediator" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add mediator" />
   </component>
 </project>

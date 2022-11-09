@@ -1,6 +1,7 @@
 using MediatR;
 using RecordStore.BusinessLogic.Extensions;
-using RecordStore.BusinessLogic.Oueries;
+using RecordStore.BusinessLogic.Handlers.Queries;
+
 
 var builder = WebApplication.CreateBuilder(args);
 

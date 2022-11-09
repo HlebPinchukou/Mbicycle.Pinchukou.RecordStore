@@ -7,22 +7,21 @@ namespace RecordStore.DataAccess.Repositories
     public class ArtistRepository : Repository<Artist>, IArtistRepository
     {
         private readonly RecordStoreContext _context;
-        
+
         public ArtistRepository(RecordStoreContext context) : base(context)
         {
-            _context = context;
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
         protected override Artist CreateEntity(int id)
         {
             return new Artist { Id = id };
         }
-        
-        public override ICollection<Artist> Get()
+
+        public async Task<bool> ExistById(int id)
         {
-            return _context.Artists
-                .Include(x => x.Name)
-                .ToList();
+            var result = await _context.Artists.CountAsync(x => x.Id == id);
+            return result == 1;
         }
     }
 }
